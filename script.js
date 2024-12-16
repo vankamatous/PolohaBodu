@@ -11,11 +11,13 @@ let x = Number(polohaX.value);
 let y = Number(polohaY.value);
 
 
-if ((x>25 || y>25) + (x<-25 || y<-25)){
+if ((x>25 || y>25) || (x<-25 || y<-25)){
     vysledek.value = "nepatří"
+    vysledek.className = "nepatri"
 }
     else{
         vysledek.value = "patří"
+        vysledek.className = "patri"
     }
 
 }
